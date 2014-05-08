@@ -1,0 +1,46 @@
+[
+    {
+        "caption": "Edit",
+        "id": "edit",
+        "children":
+        [
+            {
+                "caption": "Semantic Wrap",
+                "id": "wrap_semantic",
+                "children":
+                [
+                    {
+                        "caption": "Semantic Wrap",
+                        "command": "toggle_semantic_wrap",
+                        "checkbox": true
+                    },
+                    {"caption": "-"},
+                    {
+                        "caption": "Turn off Max Words per Line",
+                        "command": "set_setting",
+                        "args": {"setting": "semantic_wrap_max_words", "value": 0},
+                        "checkbox": true
+                    },
+                    {
+                        "caption": "Set Max Words per Line to 10",
+                        "command": "set_setting",
+                        "args": {"setting": "semantic_wrap_max_words", "value": 10},
+                        "checkbox": true
+                    },
+                    {
+                        "caption": "Set Max Words per Line to 15",
+                        "command": "set_setting",
+                        "args": {"setting": "semantic_wrap_max_words", "value": 15},
+                        "checkbox": true
+                    },
+                    {
+                        "caption": "Set Max Words per Line to 20",
+                        "command": "set_setting",
+                        "args": {"setting": "semantic_wrap_max_words", "value": 20},
+                        "checkbox": true
+                    }
+                ]
+            }
+        ]
+    }
+]

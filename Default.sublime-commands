@@ -1,0 +1,14 @@
+[
+    {
+        "caption": "Semantic Wrap: Turn On",
+        "command": "set_semantic_wrap", "args": {"wrap": true}
+    },
+    {
+        "caption": "Semantic Wrap: Turn Off",
+        "command": "set_semantic_wrap", "args": {"wrap": false}
+    },
+    {
+        "caption": "Semantic Wrap: Set Word Limit",
+        "command": "set_semantic_wrap_words"
+    }
+]

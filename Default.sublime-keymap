@@ -1,0 +1,22 @@
+[
+    {
+        "keys": [" "],
+        "args": {"characters": "\n"},
+        "command": "insert",
+        "context": [
+            {"key": "setting.semantic_wrap"},
+            {"key": "semantic_wrap"},
+            {
+                "key": "preceding_text",
+                "operand": "[.,;!?:]$",
+                "operator": "regex_contains"
+            }
+        ]
+    },
+    {
+        "keys": [" "],
+        "args": {"characters": "\n"},
+        "command": "insert",
+        "context": [{"key": "semantic_wrap_words"}]
+    }
+]
