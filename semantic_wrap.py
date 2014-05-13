@@ -1,4 +1,5 @@
 import sublime
+from sublime import Region
 import sublime_plugin
 
 
@@ -44,11 +45,13 @@ class SemanticWrapCommand(sublime_plugin.EventListener):
         if key == "semantic_wrap":
             mw = view.settings().get("semantic_wrap_min_words", 3)
             if mw > 0:
-                line = view.substr(view.line(view.sel()[0].a))
+                pt = view.sel()[0].a
+                line = view.substr(Region(view.line(pt).begin(), pt))
                 return len(line.split()) > mw
         if key == "semantic_wrap_words":
             mw = view.settings().get("semantic_wrap_max_words", 0)
             if mw > 0:
-                line = view.substr(view.line(view.sel()[0].a))
+                pt = view.sel()[0].a
+                line = view.substr(Region(view.line(pt).begin(), pt))
                 return len(line.split()) > mw
         return False
