@@ -17,6 +17,14 @@
         "keys": [" "],
         "args": {"characters": "\n"},
         "command": "insert",
-        "context": [{"key": "semantic_wrap_words"}]
+        "context": [
+            {"key": "setting.semantic_wrap"},
+            {"key": "semantic_wrap_words"}
+        ]
+    },
+    {
+        "keys": ["shift+space"],
+        "args": {"characters": " "},
+        "command": "insert"
     }
 ]
