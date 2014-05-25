@@ -4,11 +4,12 @@ import sublime_plugin
 
 
 def is_semantic_wrap_enabled(view):
-    return view.settings().get("semantic_wrap", False)
+    return view and view.settings().get("semantic_wrap", False)
 
 
 def semantic_wrap_set(view, x):
-    view.settings().set("semantic_wrap", x)
+    if view:
+        view.settings().set("semantic_wrap", x)
 
 
 class SetSemanticWrapCommand(sublime_plugin.TextCommand):
