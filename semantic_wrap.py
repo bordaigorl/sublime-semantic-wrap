@@ -4,7 +4,7 @@ import sublime_plugin
 
 
 def is_semantic_wrap_enabled(view):
-    return view and view.settings().get("semantic_wrap", False)
+    return view is not None and view.settings().get("semantic_wrap", False)
 
 
 def semantic_wrap_set(view, x):
